@@ -1,0 +1,163 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Menu */
+.desktop-header {
+    display: flex;
+    position: fixed;
+    z-index: 998;
+    width: 100vw;
+    height: 5rem;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.desktop-header  nav {
+    width: 100%;
+    max-width: 1368px;
+    margin-inline: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: 'Oleo Script Swash Caps';
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-items ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
+
+.menu-link {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+}
+
+.menu-link:hover {
+    color: rgb(209, 209, 209);
+}
+
+/* Mobile header */
+
+
+.mobile-header .menu-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.dropdown-content {
+    display: block;
+    width: 50%;
+    background-color: wheat;
+    position: absolute;
+    z-index: 999;
+    left: 25vw;
+    top: 4rem;
+}
+
+.dropbtn svg {
+    fill: white;
+}
+
+/* Landing Page */
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)),url(../assets/img/img1.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.landing-page .landing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-top: -2rem;
+    width: 45rem;
+}
+
+/* Landing Title */
+.landing-content .title {
+    font-family: 'Oleo Script Swash Caps';
+    font-weight: 400;
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    line-height: 5rem;
+}
+
+/* Landing Description */
+.landing-content .description {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.1rem;
+    width: 33rem;
+    text-align: center;
+    color: white;
+}
+
+/* Landing Buttons */
+.landing-content .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 18px;
+    background-color: #E1651F ;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    transition:  background 1s;
+}
+
+.btn:hover {
+    background-color: rgb(175, 81, 26);
+}
+
+@media screen and (max-width: 960px) {
+    .landing-content .title {
+        font-size: 2rem;
+        width: 20rem;
+        line-height: 1.6rem;
+    }
+
+    .landing-content .description {
+        font-size: .9rem;
+        width: 20rem;
+    }
+
+    .btn {
+        font-size: .8rem;
+    }
+}
