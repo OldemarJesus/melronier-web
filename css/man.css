@@ -32,6 +32,11 @@ nav .logo {
     cursor: pointer;
 }
 
+.menu-items {
+    display: block;
+    transition: display 1s;
+}
+
 .menu-items ul {
     display: flex;
     flex-direction: row;
@@ -52,29 +57,24 @@ nav .logo {
     color: rgb(209, 209, 209);
 }
 
-/* Mobile header */
+ /* menu bar */
+ .menu-bars {
+     display: none;
+     width: 30px;
+     height: 30px;
+     /* display: flex; */
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 5px;
+     cursor: pointer;
+ }
 
-
-.mobile-header .menu-mobile{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-}
-
-.dropdown-content {
-    display: block;
-    width: 50%;
-    background-color: wheat;
-    position: absolute;
-    z-index: 999;
-    left: 25vw;
-    top: 4rem;
-}
-
-.dropbtn svg {
-    fill: white;
-}
+ .menu-bars .bar {
+     width: 100%;
+     height: 4px;
+     background-color: white;
+ }
 
 /* Landing Page */
 .landing-page {
@@ -146,6 +146,7 @@ nav .logo {
 }
 
 @media screen and (max-width: 960px) {
+    /* landing page */
     .landing-content .title {
         font-size: 2rem;
         width: 20rem;
@@ -159,5 +160,49 @@ nav .logo {
 
     .btn {
         font-size: .8rem;
+    }
+
+    /* Navbar */
+    .desktop-header {
+        height: fit-content;
+        transition: height 1s;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu-items {
+        display: none;
+        width: 100%;
+    }
+
+    .menu-items ul {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .menu-items ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .menu-items ul li:hover {
+        background-color: rgba(255, 255, 255, 0.445);
+    }
+
+    .top-menu {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .menu-bars {
+        display: flex;
+    }
+
+    .desktop-header {
+        background-color: rgba(0, 0, 0, 0.9);
     }
 }
