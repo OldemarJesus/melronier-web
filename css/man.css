@@ -9,7 +9,11 @@
     display: flex;
     position: fixed;
     z-index: 998;
+<<<<<<< HEAD
     width: 100vw;
+=======
+    width: 100%;
+>>>>>>> 797d9a49473fce339b82660bf7d62ed82a75891a
     height: 5rem;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.4);
@@ -32,6 +36,14 @@ nav .logo {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+.menu-items {
+    display: block;
+    transition: display 1s;
+}
+
+>>>>>>> 797d9a49473fce339b82660bf7d62ed82a75891a
 .menu-items ul {
     display: flex;
     flex-direction: row;
@@ -52,6 +64,7 @@ nav .logo {
     color: rgb(209, 209, 209);
 }
 
+<<<<<<< HEAD
 /* Mobile header */
 
 
@@ -75,6 +88,26 @@ nav .logo {
 .dropbtn svg {
     fill: white;
 }
+=======
+ /* menu bar */
+ .menu-bars {
+     display: none;
+     width: 30px;
+     height: 30px;
+     /* display: flex; */
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 5px;
+     cursor: pointer;
+ }
+
+ .menu-bars .bar {
+     width: 100%;
+     height: 4px;
+     background-color: white;
+ }
+>>>>>>> 797d9a49473fce339b82660bf7d62ed82a75891a
 
 /* Landing Page */
 .landing-page {
@@ -82,7 +115,11 @@ nav .logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     width: 100vw;
+=======
+    width: 100%;
+>>>>>>> 797d9a49473fce339b82660bf7d62ed82a75891a
     height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)),url(../assets/img/img1.jpg);
     background-size:cover;
@@ -97,7 +134,11 @@ nav .logo {
     gap: 1.5rem;
     padding: 1rem;
     margin-top: -2rem;
+<<<<<<< HEAD
     width: 45rem;
+=======
+    width: auto;
+>>>>>>> 797d9a49473fce339b82660bf7d62ed82a75891a
 }
 
 /* Landing Title */
@@ -146,6 +187,10 @@ nav .logo {
 }
 
 @media screen and (max-width: 960px) {
+<<<<<<< HEAD
+=======
+    /* landing page */
+>>>>>>> 797d9a49473fce339b82660bf7d62ed82a75891a
     .landing-content .title {
         font-size: 2rem;
         width: 20rem;
@@ -160,4 +205,51 @@ nav .logo {
     .btn {
         font-size: .8rem;
     }
+<<<<<<< HEAD
+=======
+
+    /* Navbar */
+    .desktop-header {
+        height: fit-content;
+        transition: height 1s;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu-items {
+        display: none;
+        width: 100%;
+    }
+
+    .menu-items ul {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .menu-items ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .menu-items ul li:hover {
+        background-color: rgba(255, 255, 255, 0.445);
+    }
+
+    .top-menu {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .menu-bars {
+        display: flex;
+    }
+
+    .desktop-header {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+>>>>>>> 797d9a49473fce339b82660bf7d62ed82a75891a
 }
