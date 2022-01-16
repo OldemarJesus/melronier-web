@@ -308,3 +308,184 @@ nav .logo {
         width: 100%;
     }
 }
+
+/* menu page */
+.menu-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.menu-page .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.content .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.content .header .title {
+    margin-top: 4rem;
+    font-family: 'Oleo Script Swash Caps';
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.content .header .title-desc {
+    margin-top: 1rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: .9;
+}
+
+.content .header .title-underline {
+    margin-top: 2rem;
+    width: 8rem;
+    height: .3rem;
+    background-color: #E1651F;
+}
+
+.content .menu-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+/* Header butotns */
+.menu-content .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.menu-content .category:hover > .category_underline {
+    display: block;
+    background-color: #5590ff;
+}
+
+.menu-content .menu-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.menu-buttons .category .title {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.2rem;
+    opacity: .8;
+}
+
+.menu-buttons .category .title.active{
+    opacity: 1;
+}
+
+.menu-buttons .category .category_underline {
+    display: none;
+    margin-top: .5rem;
+    width: 4rem;
+    height: .2rem;
+    background-color: #005BFF;
+}
+
+.menu-buttons .category .category_underline.active {
+    display: block;
+}
+
+.menu-content .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: fit-content;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .7rem;
+    width: 18rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-image img {
+    width: 100%;
+}
+
+.card .card-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info .title {
+    font-family: 'Oleo Script Swash Caps';
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.card-info .price {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: .9rem;
+    padding-inline: 1rem;
+    padding-block: .2rem;
+    background-color: #E1651F;
+    color: white;
+}
+
+.card-description {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: .9rem;
+    text-align: justify;
+    opacity: .9;
+}
+
+.card .button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.button .menu-button {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: .8rem;
+    padding-inline: .8rem;
+    padding-block: .3rem;
+    border-radius: 8px;
+    background-color: rgba(232, 107, 38, 0.08);
+    color: #E1651F;
+    cursor: pointer;
+}
+
+/* check star  */
+.checked {
+    color: orange;
+  }
