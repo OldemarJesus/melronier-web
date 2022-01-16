@@ -15,7 +15,7 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.desktop-header  nav {
+.desktop-header nav {
     width: 100%;
     max-width: 1368px;
     margin-inline: 4rem;
@@ -57,24 +57,24 @@ nav .logo {
     color: rgb(209, 209, 209);
 }
 
- /* menu bar */
- .menu-bars {
-     display: none;
-     width: 30px;
-     height: 30px;
-     /* display: flex; */
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     gap: 5px;
-     cursor: pointer;
- }
+/* menu bar */
+.menu-bars {
+    display: none;
+    width: 30px;
+    height: 30px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
 
- .menu-bars .bar {
-     width: 100%;
-     height: 4px;
-     background-color: white;
- }
+.menu-bars .bar {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
 
 /* Landing Page */
 .landing-page {
@@ -84,8 +84,8 @@ nav .logo {
     align-items: center;
     width: 100%;
     height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)),url(../assets/img/img1.jpg);
-    background-size:cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../assets/img/img1.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -121,7 +121,7 @@ nav .logo {
 }
 
 /* Landing Buttons */
-.landing-content .buttons{
+.landing-content .buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -132,13 +132,13 @@ nav .logo {
 .btn {
     padding: 1rem 2rem;
     border-radius: 18px;
-    background-color: #E1651F ;
+    background-color: #E1651F;
     color: white;
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 1rem;
     cursor: pointer;
-    transition:  background 1s;
+    transition: background 1s;
 }
 
 .btn:hover {
@@ -146,6 +146,7 @@ nav .logo {
 }
 
 @media screen and (max-width: 960px) {
+
     /* landing page */
     .landing-content .title {
         font-size: 2rem;
@@ -167,9 +168,11 @@ nav .logo {
         height: fit-content;
         transition: height 1s;
     }
+
     .menu {
         flex-direction: column;
     }
+
     .menu-items {
         display: none;
         width: 100%;
@@ -233,9 +236,9 @@ nav .logo {
     height: 60%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "gimg1 gimg2"
-    "gimg1 gimg3"
+    grid-template-areas:
+        "gimg1 gimg2"
+        "gimg1 gimg3";
 }
 
 .image-grid .img1 {
@@ -265,6 +268,7 @@ nav .logo {
 .about-page .title {
     margin-bottom: 2rem;
 }
+
 .about-page .title-text {
     font-family: 'Oleo Script Swash Caps';
     font-weight: 400;
@@ -285,4 +289,22 @@ nav .logo {
 .about-page p {
     font-family: 'Poppins';
     margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+    .about-page .content {
+        flex-direction: column-reverse;
+    }
+
+    .about-page .content .image-grid {
+        width: 100%;
+        margin-top: 1rem;
+        grid-template-areas:
+            "gimg2 gimg2"
+            ". .";
+    }
+
+    .about-page .text-content {
+        width: 100%;
+    }
 }
