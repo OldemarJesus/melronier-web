@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+/* Main */
+main {
+    display: block;
+    width: fit-content;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 /* Menu */
 .desktop-header {
     display: flex;
