@@ -190,6 +190,7 @@ nav .logo {
     .desktop-header {
         height: fit-content;
         transition: height 1s;
+        padding-bottom: 1rem;
     }
 
     .menu {
