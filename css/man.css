@@ -507,6 +507,14 @@ nav .logo {
     background-color: rgba(232, 107, 38, 0.08);
     color: #E1651F;
     cursor: pointer;
+    transition: background .5s;
+    transition: color .5s;
+
+}
+
+.button .menu-button:hover {
+    background-color: rgba(232, 106, 38, 0.726);
+    color: white;
 }
 
 /* check star  */
