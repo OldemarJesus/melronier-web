@@ -19,7 +19,7 @@ html {
 /* Main */
 main {
     display: block;
-    width: fit-content;
+    width: 100%;
     height: 100%;
     margin: 0;
     box-sizing: border-box;
@@ -336,10 +336,9 @@ nav .logo {
 /* menu page */
 .menu-page {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
-    height: fit-content;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.04);
 }
@@ -418,7 +417,7 @@ nav .logo {
     opacity: .8;
 }
 
-.menu-buttons .category .title.active{
+.menu-buttons .category.active > .title{
     opacity: 1;
 }
 
@@ -430,7 +429,7 @@ nav .logo {
     background-color: #005BFF;
 }
 
-.menu-buttons .category .category_underline.active {
+.menu-buttons .category.active > .category_underline {
     display: block;
 }
 

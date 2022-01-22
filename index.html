@@ -86,21 +86,113 @@
                 </div>
                 <div class="menu-content">
                     <div class="menu-buttons">
-                        <div class="category">
+                        <div class="category" data-category="petiscos">
                             <div class="title">Petiscos</div>
                             <div class="category_underline"></div>
                         </div>
-                        <div class="category">
-                            <div class="title active">Bebidas</div>
-                            <div class="category_underline active"></div>
+                        <div class="category active" data-category="bebidas">
+                            <div class="title">Bebidas</div>
+                            <div class="category_underline"></div>
                         </div>
-                        <div class="category">
+                        <div class="category" data-category="salgados">
                             <div class="title">Salgados</div>
                             <div class="category_underline"></div>
                         </div>
                     </div>
                     <div class="menu-items">
-                        <div class="card">
+                        <!-- Petiscos -->
+                        <div class="card" data-category="petiscos" data-category="petiscos">
+                            <div class="card-image">
+                                <img class="image" src="assets/img/Petiscos/img1.jpeg" alt="Arroz de Pato">
+                            </div>
+                            <div class="card-starts">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Arroz de Pato</div>
+                                <div class="price">€8.90</div>
+                            </div>
+                            <div class="card-description">
+                                Coloca Azeite, cebola picada , alho picado , coentros e salsa picada, num tacho
+                            </div>
+                            <div class="button">
+                                <button class="menu-button">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="card" data-category="petiscos">
+                            <div class="card-image">
+                                <img class="image" src="assets/img/Petiscos/img2.jpeg" alt="Arroz de Pato 2">
+                            </div>
+                            <div class="card-starts">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Arroz de Pato 2</div>
+                                <div class="price">€10.90</div>
+                            </div>
+                            <div class="card-description">
+                                Coloque o conteúdo do pato e o arroz no tabuleiro e espalhe bem
+                            </div>
+                            <div class="button">
+                                <button class="menu-button">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="card" data-category="petiscos">
+                            <div class="card-image">
+                                <img class="image" src="assets/img/Petiscos/img3.jpg" alt="Pica Pau à Moda da Charneca">
+                            </div>
+                            <div class="card-starts">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Pica Pau</div>
+                                <div class="price">€14.99</div>
+                            </div>
+                            <div class="card-description">
+                                A receita original de de pica-pau tem origem na Charneca do Ribatejo.
+                            </div>
+                            <div class="button">
+                                <button class="menu-button">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="card" data-category="petiscos">
+                            <div class="card-image">
+                                <img class="image" src="assets/img/Petiscos/img4.jpg" alt="Febras em molho de café">
+                            </div>
+                            <div class="card-starts">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Febras</div>
+                                <div class="price">€12.50</div>
+                            </div>
+                            <div class="card-description">
+                                Tempere as febras com alho picado, sal e pimenta.
+                            </div>
+                            <div class="button">
+                                <button class="menu-button">Comprar</button>
+                            </div>
+                        </div>
+
+
+                        <!-- Bebidas -->
+                        <div class="card" data-category="bebidas" data-category="bebidas">
                             <div class="card-image">
                                 <img class="image" src="assets/img/Bebidas/beb1.jpg" alt="Bebida">
                             </div>
@@ -122,7 +214,7 @@
                                 <button class="menu-button">Comprar</button>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-category="bebidas">
                             <div class="card-image">
                                 <img class="image" src="assets/img/Bebidas/beb8.jpg" alt="Vodka Beluga">
                             </div>
@@ -144,7 +236,7 @@
                                 <button class="menu-button">Comprar</button>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-category="bebidas">
                             <div class="card-image">
                                 <img class="image" src="assets/img/Bebidas/beb7.jpg" alt="Vodka Grey">
                             </div>
@@ -166,7 +258,7 @@
                                 <button class="menu-button">Comprar</button>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-category="bebidas">
                             <div class="card-image">
                                 <img class="image" src="assets/img/Bebidas/beb6.jpg" alt="Vodka Belvedere">
                             </div>
@@ -188,7 +280,7 @@
                                 <button class="menu-button">Comprar</button>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-category="bebidas">
                             <div class="card-image">
                                 <img class="image" src="assets/img/Bebidas/beb5.jpg" alt="Vodka Absolut">
                             </div>
@@ -210,7 +302,7 @@
                                 <button class="menu-button">Comprar</button>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-category="bebidas">
                             <div class="card-image">
                                 <img class="image" src="assets/img/Bebidas/beb4.jpg" alt="Gin Bulldo">
                             </div>
@@ -232,7 +324,7 @@
                                 <button class="menu-button">Comprar</button>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-category="bebidas">
                             <div class="card-image">
                                 <img class="image" src="assets/img/Bebidas/beb3.jpg" alt="Gin Gordon's">
                             </div>
@@ -254,7 +346,7 @@
                                 <button class="menu-button">Comprar</button>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-category="bebidas">
                             <div class="card-image">
                                 <img class="image" src="assets/img/Bebidas/beb2.jpg" alt="Gin Martin">
                             </div>
@@ -276,6 +368,96 @@
                                 <button class="menu-button">Comprar</button>
                             </div>
                         </div>
+                        <!-- Salgados -->
+                        <div class="card" data-category="salgados">
+                            <div class="card-image">
+                                <img class="image" src="assets/img/Salgados/img1.jpg" alt="Trouxinha de Pizza">
+                            </div>
+                            <div class="card-starts">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Trouxinha</div>
+                                <div class="price">€2.50</div>
+                            </div>
+                            <div class="card-description">
+                                Em um recipiente, misture, aos poucos, metade da farinha, o sal, a margarina e o leite
+                            </div>
+                            <div class="button">
+                                <button class="menu-button">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="card" data-category="salgados">
+                            <div class="card-image">
+                                <img class="image" src="assets/img/Salgados/img1.jpg" alt="Trouxinha de Pizza">
+                            </div>
+                            <div class="card-starts">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Trouxinha</div>
+                                <div class="price">€2.50</div>
+                            </div>
+                            <div class="card-description">
+                                Em um recipiente, misture, aos poucos, metade da farinha, o sal, a margarina e o leite
+                            </div>
+                            <div class="button">
+                                <button class="menu-button">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="card" data-category="salgados">
+                            <div class="card-image">
+                                <img class="image" src="assets/img/Salgados/img2.jpg" alt="Esfira de Carne">
+                            </div>
+                            <div class="card-starts">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Esfirra</div>
+                                <div class="price">€1.50</div>
+                            </div>
+                            <div class="card-description">
+                                Coloque em uma vasilha o fermento, o açúcar e o sal.
+                            </div>
+                            <div class="button">
+                                <button class="menu-button">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="card" data-category="salgados">
+                            <div class="card-image">
+                                <img class="image" src="assets/img/Salgados/img3.jpg" alt="Empanadas">
+                            </div>
+                            <div class="card-starts">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Empanadas</div>
+                                <div class="price">€1.50</div>
+                            </div>
+                            <div class="card-description">
+                                Receita de Empanadas. Enviada por TudoGostoso e demora apenas 120 minutos.
+                            </div>
+                            <div class="button">
+                                <button class="menu-button">Comprar</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -389,7 +571,11 @@
         </section>
     </main>
 
+    <!-- Script principal -->
     <script src="js/man.js"></script>
+
+    <!-- Script para menu de bebidas -->
+    <script src="js/menu_food.js"></script>
 </body>
 
 </html>
