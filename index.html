@@ -14,6 +14,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/man.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -505,18 +507,20 @@
                     </div>
                     <div class="form-row">
                         <div class="form-phone">
-                            <input type="number" name="phone" id="phone" placeholder="Seu Número de Telemóvel">
+                            <input type="number" min="111111111" max="999999999" name="phone" id="phone" placeholder="Seu Número de Telemóvel">
                         </div>
                         <div class="form-people">
-                            <input type="number" name="people" id="people" placeholder="Número de Pessoas">
+                            <input type="number" min="2" max="20" name="people" id="people" placeholder="Número de Pessoas">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-date">
+                            <label for="date">Data de Entrada</label>
                             <input type="date" name="phone" id="date" placeholder="Data">
                         </div>
                         <div class="form-hora">
-                            <input type="time" name="hora" id="hora" placeholder="Hora">
+                            <label for="hora">Hora de Entrada</label>
+                            <input type="time" name="hora" id="hora" min="09:00" max="23:00" placeholder="Hora">
                         </div>
                     </div>
                     <div class="form-description">
@@ -524,7 +528,7 @@
                             placeholder="Sua Mensagem"></textarea>
                     </div>
                     <div class="form-buttons">
-                        <button class="">Agendar</button>
+                        <button onclick="submitForm()">Agendar</button>
                     </div>
                 </div>
             </div>
@@ -576,6 +580,10 @@
 
     <!-- Script para menu de bebidas -->
     <script src="js/menu_food.js"></script>
+
+    <!-- Script para formularion -->
+    
+    <script src="js/formSubmit.js"></script>
 </body>
 
 </html>
