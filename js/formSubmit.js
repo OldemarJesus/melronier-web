@@ -69,7 +69,7 @@ function submitForm() {
     }
 
     // make array of data to save
-    const data = {
+    data = {
         "email": emailInput.value,
         "name": nameInput.value,
         "phone": phoneInput.value,
@@ -102,18 +102,19 @@ const validateHhMm = (inputField) => {
 }
 
 const sendToApi = (data) => {
-    const response = $.post( "http://melronier-api.vercel.app/agendamentos", data);
+    // const response = $.post("http://localhost:4000/agendamentos", data);
 
-    response.fail(function(err){
-        alert("O processo falhou! O seu pedido não foi registado!");
-        console.log(err);
+    $.ajax({
+        contentType: "application/json",
+        dataType: "json",
+        type: "POST",
+        url: "http://localhost:4000/agendamentos",
+        data: JSON.stringify(data),
+        success: function (dataRes) {
+            alert("O seu pedido foi registado com sucesso sobe o id: " + dataRes._id);
+        }
+    }).then(function () {
+        alert("Processo terminado!");
     })
 
-    response.done(function(dataRes){
-        alert("O seu pedido foi registado com sucesso sobe o id: "+dataRes._id);
-    });
-
-    response.always(function(){
-        alert("Processo terminado!");
-    });
 }
