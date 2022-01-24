@@ -108,7 +108,7 @@ const sendToApi = (data) => {
         contentType: "application/json",
         dataType: "json",
         type: "POST",
-        url: "http://localhost:4000/agendamentos",
+        url: "http://melronier-api.vercel.app/agendamentos",
         data: JSON.stringify(data),
         success: function (dataRes) {
             alert("O seu pedido foi registado com sucesso sobe o id: " + dataRes._id);
