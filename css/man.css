@@ -411,6 +411,7 @@ nav .logo {
 }
 
 .menu-buttons .category .title {
+    pointer-events: none;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 1.2rem;
@@ -422,6 +423,7 @@ nav .logo {
 }
 
 .menu-buttons .category .category_underline {
+    pointer-events: none;
     display: none;
     margin-top: .5rem;
     width: 4rem;
