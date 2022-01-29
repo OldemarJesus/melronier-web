@@ -105,10 +105,10 @@ const sendToApi = (data) => {
     // const response = $.post("http://localhost:4000/agendamentos", data);
 
     $.ajax({
-        contentType: "application/json",
-        dataType: "json",
         type: "POST",
         url: "https://melronier-api.vercel.app/agendamentos",
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
         data: JSON.stringify(data),
         success: function (dataRes) {
             alert("O seu pedido foi registado com sucesso sobe o id: " + dataRes._id);
