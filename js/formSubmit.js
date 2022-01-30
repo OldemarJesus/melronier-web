@@ -103,18 +103,44 @@ const validateHhMm = (inputField) => {
 
 const sendToApi = (data) => {
     // const response = $.post("http://localhost:4000/agendamentos", data);
+    const url ="https://melronier-api.vercel.app/agendamentos";
+
+    // $.ajax({
+    //     type: "POST",
+    //     url: url,
+    //     contentType: "application/json; charset=utf-8",
+    //     data: JSON.stringify(data),
+    //     success: function (dataRes) {
+    //         alert("O seu pedido foi registado com sucesso sobe o id: " + dataRes._id);
+    //     },
+    //     error: function(xhr, textStatus, errorThrown){
+    //         alert('Pedido falhou->'+textStatus);
+    //     } 
+    // }).then(function () {
+    //     alert("Processo terminado!");
+    //     cleanForm();
+    // })
 
     $.ajax({
-        type: "POST",
-        url: "https://melronier-api.vercel.app/agendamentos",
-        dataType: "json",
-        contentType: "application/json; charset=utf-8",
+        type: "post",
+        url: url,
         data: JSON.stringify(data),
-        success: function (dataRes) {
-            alert("O seu pedido foi registado com sucesso sobe o id: " + dataRes._id);
+        dataType: "json",
+        contentType: "application/json",
+        success: function (response) {
+            console.info(response);
         }
-    }).then(function () {
-        alert("Processo terminado!");
-    })
+    });
 
+}
+
+
+const cleanForm = () => {
+    document.getElementById("name").value = null;
+    document.getElementById("email").value = null;
+    document.getElementById("phone").value = null;
+    document.getElementById("people").value = null;
+    document.getElementById("date").value = null;
+    document.getElementById("hora").value = null;
+    document.getElementById("description").value = null;
 }
