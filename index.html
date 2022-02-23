@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="css/man.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -101,8 +102,37 @@
                             <div class="title">Salgados</div>
                             <div class="category_underline"></div>
                         </div>
+                        <div class="category" data-category="cafes">
+                            <div class="title">Cafés</div>
+                            <div class="category_underline"></div>
+                        </div>
                     </div>
                     <div class="menu-items">
+                        <!--Cafés-->
+                        <div class="card" data-category="cafes" data-category="cafes">
+                            <div class="card-image">
+                                <img class="image" src="assets/img/Cafes/img1.jpg" alt="Cafe">
+                            </div>
+                            <div class="card-starts">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Bly Café</div>
+                                <div class="price">€1.90</div>
+                            </div>
+                            <div class="card-description">
+                                Melhor companheiro do trabalho!
+                            </div>
+                            <div class="button">
+                                <button class="menu-button">Comprar</button>
+                            </div>
+                        </div>
+
+
                         <!-- Petiscos -->
                         <div class="card" data-category="petiscos" data-category="petiscos">
                             <div class="card-image">
@@ -508,10 +538,12 @@
                     </div>
                     <div class="form-row">
                         <div class="form-phone">
-                            <input type="number" min="111111111" max="999999999" name="phone" id="phone" placeholder="Seu Número de Telemóvel">
+                            <input type="number" min="111111111" max="999999999" name="phone" id="phone"
+                                placeholder="Seu Número de Telemóvel">
                         </div>
                         <div class="form-people">
-                            <input type="number" min="2" max="20" name="people" id="people" placeholder="Número de Pessoas">
+                            <input type="number" min="2" max="20" name="people" id="people"
+                                placeholder="Número de Pessoas">
                         </div>
                     </div>
                     <div class="form-row">
@@ -583,7 +615,7 @@
     <script src="js/menu_food.js"></script>
 
     <!-- Script para formularion -->
-    
+
     <script src="js/formSubmit.js"></script>
 </body>
 
