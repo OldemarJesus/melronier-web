@@ -73,9 +73,10 @@ function submitForm() {
         "email": emailInput.value,
         "name": nameInput.value,
         "phone": phoneInput.value,
-        "peopleNumber": peopleInput.value,
-        "dataEntrada": dataInput.value + "T" + horaInput.value + ":00",
-        "description": descriptionInput.value
+        "people": peopleInput.value,
+        "date": dataInput.value,
+        "time": horaInput.value,
+        "message": descriptionInput.value
     };
 
     sendToApi(data);
@@ -103,34 +104,23 @@ const validateHhMm = (inputField) => {
 
 const sendToApi = (data) => {
     // const response = $.post("http://localhost:4000/agendamentos", data);
-    const url ="https://melronier-api.vercel.app/agendamentos";
-
-    // $.ajax({
-    //     type: "POST",
-    //     url: url,
-    //     contentType: "application/json; charset=utf-8",
-    //     data: JSON.stringify(data),
-    //     success: function (dataRes) {
-    //         alert("O seu pedido foi registado com sucesso sobe o id: " + dataRes._id);
-    //     },
-    //     error: function(xhr, textStatus, errorThrown){
-    //         alert('Pedido falhou->'+textStatus);
-    //     } 
-    // }).then(function () {
-    //     alert("Processo terminado!");
-    //     cleanForm();
-    // })
+    const url ="https://melronie-api.herokuapp.com/send-email";
 
     $.ajax({
-        type: "post",
+        type: "POST",
         url: url,
+        contentType: "application/json; charset=utf-8",
         data: JSON.stringify(data),
-        dataType: "json",
-        contentType: "application/json",
-        success: function (response) {
-            console.info(response);
-        }
-    });
+        success: function () {
+            alert("O seu pedido foi registado com sucesso!");
+        },
+        error: function(xhr, textStatus, errorThrown){
+            alert('Pedido falhou->'+textStatus);
+        } 
+    }).then(function () {
+        alert("Processo terminado!");
+        cleanForm();
+    })
 
 }
 
